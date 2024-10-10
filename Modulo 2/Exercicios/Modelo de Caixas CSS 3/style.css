@@ -1,0 +1,47 @@
+@charset "UTF-8"
+
+h1{
+    color: chocolate;
+}
+
+p{
+    text-align: justify;
+    font-weight: bolder; 
+}
+
+div>.para2{
+    display: none;
+}
+
+div:hover>.para2{
+    display: block;
+}
+
+div{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    text-align: center;
+
+    height: 700px;
+    width: 500px;
+    
+    border-width: 4px;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    
+    padding-left: 7px;
+    padding-right: 7px;
+    
+    margin: auto;
+}
+
+a{
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(to bottom, black 60%, white 100%);
+
+}
