@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas Responsivas</title>
+  
+  <style>
+    /* Estilo básico para a tabela */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: gray;
+      color: white;
+    }
+
+    /* Linhas zebradas para melhorar a legibilidade */
+    tbody tr:nth-child(even) {
+      background-color: #f2f2f2; /* Cinza leve */
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabelas em telas pequenas</h1>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque corporis illo a, error adipisci minima quod, cumque voluptate quo, cum quis sequi numquam rem tempora reprehenderit distinctio dolorum vel.</p>
+
+  <!-- Tabela de produtos com vendas mensais -->
+  <table>
+    <caption>Tabelas Responsivas</caption>
+
+    <!-- Cabeçalho com os nomes dos meses -->
+    <thead>
+      <tr>
+        <th>Produto</th> <!-- Coluna para nome dos produtos -->
+        <th>Janeiro</th>
+        <th>Fevereiro</th>
+        <th>Março</th>
+        <th>Abril</th>
+        <th>Maio</th>
+        <th>Junho</th>
+        <th>Julho</th>
+        <th>Agosto</th>
+        <th>Setembro</th>
+        <th>Outubro</th>
+        <th>Novembro</th>
+        <th>Dezembro</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- Linha para Produto A -->
+      <tr>
+        <td>Produto A</td>
+        <td>120</td>
+        <td>110</td>
+        <td>90</td>
+        <td>150</td>
+        <td>130</td>
+        <td>100</td>
+        <td>80</td>
+        <td>95</td>
+        <td>115</td>
+        <td>140</td>
+        <td>170</td>
+        <td>200</td>
+      </tr>
+
+      <!-- Linha para Produto B -->
+      <tr>
+        <td>Produto B</td>
+        <td>80</td>
+        <td>60</td>
+        <td>70</td>
+        <td>85</td>
+        <td>90</td>
+        <td>65</td>
+        <td>75</td>
+        <td>50</td>
+        <td>100</td>
+        <td>105</td>
+        <td>110</td>
+        <td>120</td>
+      </tr>
+
+      <!-- Linha para Produto C -->
+      <tr>
+        <td>Produto C</td>
+        <td>200</td>
+        <td>190</td>
+        <td>180</td>
+        <td>210</td>
+        <td>230</td>
+        <td>240</td>
+        <td>260</td>
+        <td>250</td>
+        <td>220</td>
+        <td>215</td>
+        <td>205</td>
+        <td>225</td>
+      </tr>
+
+      <!-- Linha para Produto D -->
+      <tr>
+        <td>Produto D</td>
+        <td>50</td>
+        <td>45</td>
+        <td>55</td>
+        <td>60</td>
+        <td>70</td>
+        <td>65</td>
+        <td>80</td>
+        <td>75</td>
+        <td>85</td>
+        <td>90</td>
+        <td>95</td>
+        <td>100</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
