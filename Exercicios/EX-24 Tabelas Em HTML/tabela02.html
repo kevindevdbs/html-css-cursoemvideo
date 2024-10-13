@@ -9,43 +9,63 @@
   <style>
     /* Estilos Gerais */
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif; /* Define a fonte do corpo */
     }
 
     /* Estilos para a Tabela */
     table {
-      width: 400px;
+      width: 400px; /* Define a largura da tabela */
       border-collapse: collapse; /* Remove o espaço entre células */
+      position: relative;
+    }
+
+    caption {
+      font-size: 1.2em; /* Define o tamanho da fonte do caption */
+      text-align: center; /* Centraliza o caption */
+      background-color: gray; /* Define a cor de fundo do caption */
+      padding: 1px; /* Define o preenchimento do caption */
+      color: white; /* Define a cor do texto do caption */
     }
 
     /* Cabeçalho da Tabela */
     thead {
-      background-color: gray;
-      color: white;
+      background-color: rgb(52, 52, 52); /* Cor de fundo do cabeçalho */
+      color: white; /* Cor do texto do cabeçalho */
+    }
+
+    thead> tr >th {
+      position: sticky;
+      top: -1px;
+      background-color:rgb(52, 52, 52) ;
+    }
+
+    /* Estilo das linhas ímpares do corpo da tabela */
+    tbody tr:nth-child(odd) {
+      background-color: lightgray; /* Cor de fundo para linhas ímpares */
     }
 
     /* Células da Tabela */
     th, td {
-      border: 1px solid black; /* Define a borda */
+      border: 1px solid rgb(0, 0, 0); /* Define a borda das células */
       padding: 10px; /* Espaçamento interno das células */
-      text-align: center; /* Centraliza o texto */
+      text-align: center; /* Centraliza o texto nas células */
     }
 
     /* Estilo Especial para Números */
     td.num {
-      font-weight: bold;
-      text-align: right;
+      font-weight: bold; /* Deixa os números em negrito */
+      text-align: right; /* Alinha os números à direita */
     }
 
     /* Ajuste do Rodapé */
     tfoot th {
-      font-weight: normal; /* Mesma espessura que as outras células */
+      font-weight: normal; /* Define a espessura da fonte no rodapé */
     }
 
-    /* Ajuste do Rodapé */
-    tfoot{
-      background-color: gray;
-      color: white;
+    /* Estilo do Rodapé */
+    tfoot {
+      background-color: rgb(51, 51, 51); /* Cor de fundo do rodapé */
+      color: white; /* Cor do texto do rodapé */
     }
   </style>
 </head>
@@ -56,11 +76,13 @@
   <!-- Tabela de Estados e População -->
   <table>
     <!-- Cabeçalho -->
+    <caption>População das Unidades Federativas</caption> <!-- Título da tabela -->
+    
     <thead>
       <tr>
-        <th>Posição</th>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Posição</th> <!-- Título da coluna de posição -->
+        <th scope="col">Estado</th> <!-- Título da coluna de estados -->
+        <th scope="col" style="width: 50px;">População</th> <!-- Título da coluna de população -->
       </tr>
     </thead>
 
@@ -232,8 +254,8 @@
     <!-- Rodapé -->
     <tfoot>
       <tr>
-        <td colspan="2"><strong>Total de Habitantes</strong></td>
-        <td class="num">214.969.093</td>
+        <th colspan="2" scope="row"><strong>Total de Habitantes</strong></th> <!-- Total de habitantes com colspan para ocupar duas colunas -->
+        <td class="num">214.969.093</td> <!-- Total populacional -->
       </tr>
     </tfoot>
   </table>
