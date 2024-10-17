@@ -2,123 +2,176 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desafio 13</title>
   <style>
     /* Estilos Gerais */
     body {
-      font-family: Arial, Helvetica, sans-serif; /* Define a fonte do corpo */
+      font-family: Arial, Helvetica, sans-serif;
+      /* Define a fonte do corpo */
     }
 
     /* Estilos para a Tabela */
     table {
-      border-collapse: collapse; /* Remove o espaço entre as células */
-      border: 1px solid black; /* Define a borda da tabela */
-      border-radius: 10px; /* Arredonda os cantos da tabela */
-      margin: auto; /* Adiciona margem em torno da tabela */
+      border-collapse: collapse;
+      /* Remove o espaço entre as células */
+      border: 1px solid black;
+      /* Define a borda da tabela */
+      border-radius: 10px;
+      /* Arredonda os cantos da tabela */
+      margin: auto;
+      /* Adiciona margem em torno da tabela */
     }
 
     /* Estilo do Caption da Tabela */
     caption {
-      font-size: 1.5em; /* Tamanho da fonte do caption */
-      padding-bottom: 20px; /* Espaçamento inferior do caption */
-      padding-top: 20px; /* Espaçamento superior do caption */
-      font-weight: bolder; /* Define o peso da fonte do caption */
-      color: white; /* Cor do texto do caption */
-      background-color: black; /* Cor de fundo do caption */
-      border-top-left-radius: 10px; /* Arredonda o canto superior esquerdo */
-      border-top-right-radius: 10px; /* Arredonda o canto superior direito */
+      font-size: 1.5em;
+      /* Tamanho da fonte do caption */
+      padding-bottom: 20px;
+      /* Espaçamento inferior do caption */
+      padding-top: 20px;
+      /* Espaçamento superior do caption */
+      font-weight: bolder;
+      /* Define o peso da fonte do caption */
+      color: white;
+      /* Cor do texto do caption */
+      background-color: black;
+      /* Cor de fundo do caption */
+      border-top-left-radius: 10px;
+      /* Arredonda o canto superior esquerdo */
+      border-top-right-radius: 10px;
+      /* Arredonda o canto superior direito */
     }
 
     /* Estilos das Células da Tabela */
     th,
     td {
-      padding: 5px; /* Espaçamento interno das células */
-      border: 1px solid black; /* Define a borda das células */
-      width: 100px; /* Largura das células */
-      height: 50px; /* Altura das células */
+      padding: 5px;
+      /* Espaçamento interno das células */
+      border: 1px solid black;
+      /* Define a borda das células */
+      width: 100px;
+      /* Largura das células */
+      height: 50px;
+      /* Altura das células */
     }
 
     /* Estilos do Cabeçalho da Tabela */
     thead th {
-      width: 200px; /* Largura das células do cabeçalho */
-      background-color: gray; /* Cor de fundo do cabeçalho */
-      color: white; /* Cor do texto do cabeçalho */
+      width: 200px;
+      /* Largura das células do cabeçalho */
+      background-color: gray;
+      /* Cor de fundo do cabeçalho */
+      color: white;
+      /* Cor do texto do cabeçalho */
     }
 
     /* Estilos para o Corpo da Tabela */
     tbody th {
-      background-color: rgb(41, 35, 35); /* Cor de fundo das células de cabeçalho no corpo */
-      color: white; /* Cor do texto nas células de cabeçalho no corpo */
+      background-color: rgb(41,
+          35,
+          35);
+      /* Cor de fundo das células de cabeçalho no corpo */
+      color: white;
+      /* Cor do texto nas células de cabeçalho no corpo */
     }
   </style>
 </head>
 
 <body>
   <table>
-
     <!-- Título da Tabela -->
-    <caption>Exercicio de Tabelas</caption>
+    <caption>
+      Exercicio de Tabelas
+    </caption>
 
     <!-- Cabeçalho da Tabela -->
     <thead>
-      <th scope="colgroup" colspan="3">Grupo</th> <!-- Coluna de grupo (Mulheres/Homens) -->
-      <th scope="col">Nomes</th> <!-- Coluna de nomes -->
-      <th scope="col" colspan="3">Filmes</th> <!-- Coluna de filmes, com 3 subcolunas -->
+      <th scope="colgroup" colspan="3">Grupo</th>
+      <!-- Coluna de grupo (Mulheres/Homens) -->
+      <th scope="col">Nomes</th>
+      <!-- Coluna de nomes -->
+      <th scope="col" colspan="3">Filmes</th>
+      <!-- Coluna de filmes, com 3 subcolunas -->
     </thead>
 
     <!-- Corpo da Tabela -->
     <tbody>
       <!-- Grupo Mulheres -->
       <tr>
-        <th scope="rowgroup" rowspan="3">Mulheres</th> <!-- Cabeçalho para o grupo Mulheres, ocupa 3 linhas -->
-        <td>Ana Maria Santos</td> <!-- Nome da primeira mulher -->
-        <td>Alien</td> <!-- Primeiro filme -->
-        <td>Rambo</td> <!-- Segundo filme -->
-        <td>Vingadores</td> <!-- Terceiro filme -->
+        <th scope="rowgroup" rowspan="3">Mulheres</th>
+        <!-- Cabeçalho para o grupo Mulheres, ocupa 3 linhas -->
+        <td>Ana Maria Santos</td>
+        <!-- Nome da primeira mulher -->
+        <td>Alien</td>
+        <!-- Primeiro filme -->
+        <td>Rambo</td>
+        <!-- Segundo filme -->
+        <td>Vingadores</td>
+        <!-- Terceiro filme -->
       </tr>
 
       <tr>
-        <td>Beatriz Souza</td> <!-- Nome da segunda mulher -->
-        <td>Hulk</td> <!-- Primeiro filme da segunda mulher -->
-        <td>Inception</td> <!-- Segundo filme da segunda mulher -->
-        <td>Batman</td> <!-- Terceiro filme da segunda mulher -->
+        <td>Beatriz Souza</td>
+        <!-- Nome da segunda mulher -->
+        <td>Hulk</td>
+        <!-- Primeiro filme da segunda mulher -->
+        <td>Inception</td>
+        <!-- Segundo filme da segunda mulher -->
+        <td>Batman</td>
+        <!-- Terceiro filme da segunda mulher -->
       </tr>
 
       <tr>
-        <td>Claudia Melo</td> <!-- Nome da terceira mulher -->
-        <td>Oblivion</td> <!-- Primeiro filme da terceira mulher -->
-        <td>Matrix</td> <!-- Segundo filme da terceira mulher -->
-        <td>Big Hero</td> <!-- Terceiro filme da terceira mulher -->
+        <td>Claudia Melo</td>
+        <!-- Nome da terceira mulher -->
+        <td>Oblivion</td>
+        <!-- Primeiro filme da terceira mulher -->
+        <td>Matrix</td>
+        <!-- Segundo filme da terceira mulher -->
+        <td>Big Hero</td>
+        <!-- Terceiro filme da terceira mulher -->
       </tr>
 
       <!-- Grupo Homens -->
       <tr>
-        <th scope="rowgroup" rowspan="4">Homens</th> <!-- Cabeçalho para o grupo Homens, ocupa 4 linhas -->
+        <th scope="rowgroup" rowspan="4">Homens</th>
+        <!-- Cabeçalho para o grupo Homens, ocupa 4 linhas -->
       </tr>
 
       <tr>
-        <td>Bruno Mendonça</td> <!-- Nome do primeiro homem -->
-        <td>Intocáveis</td> <!-- Primeiro filme do primeiro homem -->
-        <td>Amnésia</td> <!-- Segundo filme do primeiro homem -->
-        <td>Gladiador</td> <!-- Terceiro filme do primeiro homem -->
+        <td>Bruno Mendonça</td>
+        <!-- Nome do primeiro homem -->
+        <td>Intocáveis</td>
+        <!-- Primeiro filme do primeiro homem -->
+        <td>Amnésia</td>
+        <!-- Segundo filme do primeiro homem -->
+        <td>Gladiador</td>
+        <!-- Terceiro filme do primeiro homem -->
       </tr>
 
       <tr>
-        <td>Daniel Lourenço</td> <!-- Nome do segundo homem -->
-        <td>Wall-E</td> <!-- Primeiro filme do segundo homem -->
-        <td>Oldboy</td> <!-- Segundo filme do segundo homem -->
-        <td>Dangal</td> <!-- Terceiro filme do segundo homem -->
+        <td>Daniel Lourenço</td>
+        <!-- Nome do segundo homem -->
+        <td>Wall-E</td>
+        <!-- Primeiro filme do segundo homem -->
+        <td>Oldboy</td>
+        <!-- Segundo filme do segundo homem -->
+        <td>Dangal</td>
+        <!-- Terceiro filme do segundo homem -->
       </tr>
 
       <tr>
-        <td>Fabiano Mota</td> <!-- Nome do terceiro homem -->
-        <td>Star Wars 5</td> <!-- Primeiro filme do terceiro homem -->
-        <td>Taxi Driver</td> <!-- Segundo filme do terceiro homem -->
-        <td>Toy Story</td> <!-- Terceiro filme do terceiro homem -->
+        <td>Fabiano Mota</td>
+        <!-- Nome do terceiro homem -->
+        <td>Star Wars 5</td>
+        <!-- Primeiro filme do terceiro homem -->
+        <td>Taxi Driver</td>
+        <!-- Segundo filme do terceiro homem -->
+        <td>Toy Story</td>
+        <!-- Terceiro filme do terceiro homem -->
       </tr>
-
     </tbody>
   </table>
 </body>
